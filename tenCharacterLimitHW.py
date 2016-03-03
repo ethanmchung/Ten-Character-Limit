@@ -6,7 +6,7 @@ eachLines = f.readlines()
 for line in eachLines:
 	actual = len(line)
 	leftOver = actual - 10
-	if actual >= 11:
+	if actual > 10:
 		line = line[:-leftOver]
 		fo.write(line + "\n")
 	else:
